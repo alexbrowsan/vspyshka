@@ -246,6 +246,12 @@ export const maleProfiles = [
   }
 ];
 
+// Аватарки пользователя
+export const userAvatars = {
+  male: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop&crop=face",
+  female: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop&crop=face"
+};
+
 // Функция для получения профилей по полу
 export const getProfiles = (lookingFor) => {
   const profiles = lookingFor === 'female' ? femaleProfiles : maleProfiles;
