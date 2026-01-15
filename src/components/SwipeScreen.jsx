@@ -110,7 +110,9 @@ export default function SwipeScreen({ profiles, currentIndex, onSwipe, matchCoun
               dragElastic={0.7}
               dragConstraints={{ left: 0, right: 0 }}
               onDragEnd={handleDragEnd}
-              className="absolute w-full max-w-[340px] cursor-grab active:cursor-grabbing"
+              dragTransition={{ bounceStiffness: 500, bounceDamping: 30 }}
+              className="absolute w-full max-w-[340px] cursor-grab active:cursor-grabbing touch-none"
+              whileDrag={{ scale: 1.02 }}
             >
               <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
                 <div className="relative aspect-[3/4] overflow-hidden">
