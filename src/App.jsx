@@ -222,8 +222,8 @@ function App() {
   const activeMatch = matches.find(m => m.id === activeChatId);
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4">
-      <div className="w-full max-w-[400px] h-[700px] bg-white rounded-3xl shadow-2xl overflow-hidden relative">
+    <div className="min-h-screen flex items-center justify-center p-4 py-8">
+      <div className="w-full max-w-[400px] min-h-[700px] h-auto bg-white rounded-3xl shadow-2xl overflow-hidden relative">
         
         {currentScreen === 'welcome' && (
           <WelcomeScreen onRegister={handleRegister} />
